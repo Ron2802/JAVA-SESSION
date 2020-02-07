@@ -5,7 +5,15 @@ public class Test {
 	private String Name;
 	private String Email;
 	private int Salary;
+	private ClientAddress Add;
 	
+	/**
+	 * @param add the add to set
+	 */
+	public void setAdd(ClientAddress add) {
+		Add = add;
+	}
+
 	public Test() {
 		// TODO Auto-generated constructor stub
 	}
@@ -68,7 +76,7 @@ public class Test {
 
 	@Override
 	public String toString() {
-		return "Test [Id=" + Id + ", Name=" + Name + ", Email=" + Email + ", Salsry=" + Salary + "]";
+		return "Test [Id=" + Id + ", Name=" + Name + ", Email=" + Email + ", Salary=" + Salary + ", Add=" + Add + "]";
 	}
 	
 	

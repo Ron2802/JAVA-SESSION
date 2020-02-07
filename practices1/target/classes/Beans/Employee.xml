@@ -4,6 +4,7 @@
    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
 	
 	<bean class="Pojo.Client" id="c">
 	<constructor-arg name="id" value="1" type="int"></constructor-arg>
@@ -16,6 +17,7 @@
 	<property name="Name" value="Krupa"/>
 	<property name="Email" value="Krupa@gmail.com"/>
 	<property name="Salary" value="25000"/>
+	<property name="Add" ref="Add"></property>
 	</bean>
 	
 	<bean class="Pojo.Client2" id="CT">
@@ -23,5 +25,12 @@
 	<property name="Gender" value="Female"/>
 	<property name="Address" value="Hmt"/>
 	</bean>
+	
+	<bean class="Pojo.ClientAddress" id="Add">
+	<property name="MobileNo" value="814160024"/>
+	<property name="City" value="Vadali"/>
+	<property name="Pincode" value="383235"/>
+	</bean>
+	
 	
    </beans>
