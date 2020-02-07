@@ -18,4 +18,10 @@
 	<property name="Salary" value="25000"/>
 	</bean>
 	
+	<bean class="Pojo.Client2" id="CT">
+	<property name="Name" value="Anjali"/>
+	<property name="Gender" value="Female"/>
+	<property name="Address" value="Hmt"/>
+	</bean>
+	
    </beans>
